@@ -7,9 +7,11 @@ size = 24; // [20:40]
 sizeB = 24;
 
 // your text
-Mlabel = "PETG";
-Clabel = "White";
-manufactuer="Amazon";
+Tlabel = "TlabelV";
+Clabel = "ClabelV";
+Mlabel="MlabelV";
+
+
 /* [Hidden] */
 
 h = 0.6;
@@ -38,7 +40,7 @@ translate([-size/2, -size/2, h])
                     cube([size+d, size, h]);
                     cylinder(r=r, h=h);
                 }
-            message(manufactuer, size+d);    
+            message(Tlabel, size+d);    
         }
         union() {
             translate([r/2, r/2, -2*h])
